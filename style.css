@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #26364d;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #172b4d;
+  color: white;
+  position: fixed;
+  padding: 25px 18px;
+}
+
+.brand {
+  margin-bottom: 40px;
+}
+
+.brand h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.brand p {
+  color: #aebbd0;
+  font-size: 12px;
+}
+
+.menu-title {
+  color: #8293ad;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.menu {
+  display: block;
+  padding: 13px;
+  margin-bottom: 8px;
+  color: #c4cede;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.menu.active,
+.menu:hover {
+  background: #29466f;
+  color: white;
+}
+
+.admin {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  background: #dce9ff;
+  color: #285da8;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.admin strong {
+  font-size: 12px;
+}
+
+.admin p {
+  font-size: 11px;
+  color: #aebbd0;
+  margin-top: 4px;
+}
+
+/* Main Content */
+.main {
+  margin-left: 240px;
+}
+
+header {
+  height: 70px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  border-bottom: 1px solid #e9edf3;
+  color: #758196;
+  font-size: 13px;
+}
+
+.content {
+  padding: 35px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  color: #3978d6;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heading h1 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.heading p:last-child {
+  color: #8995a5;
+  font-size: 13px;
+}
+
+.btn-add {
+  background: #3978d6;
+  color: white;
+  padding: 12px 17px;
+  border: none;
+  border-radius: 6px;
+  cursor: not-allowed;
+}
+
+/* Statistics */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 9px;
+  border: 1px solid #edf0f5;
+}
+
+.card span {
+  color: #8792a2;
+  font-size: 12px;
+}
+
+.card h2 {
+  font-size: 27px;
+  margin: 13px 0 7px;
+}
+
+.card p {
+  color: #a0a9b7;
+  font-size: 11px;
+}
+
+/* Table */
+.table-container {
+  background: white;
+  border-radius: 9px;
+  border: 1px solid #edf0f5;
+  overflow: hidden;
+}
+
+.table-heading {
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.table-heading h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.table-heading p {
+  color: #8995a5;
+  font-size: 12px;
+}
+
+.table-heading input {
+  padding: 10px;
+  border: 1px solid #e4e9f0;
+  border-radius: 6px;
+  outline: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th {
+  background: #f8f9fc;
+  color: #8995a5;
+  font-size: 11px;
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  padding: 16px 15px;
+  font-size: 12px;
+  border-bottom: 1px solid #f0f2f6;
+  color: #586579;
+}
+
+.status {
+  padding: 6px 9px;
+  border-radius: 15px;
+  font-size: 10px;
+}
+
+.success {
+  background: #e8f7ef;
+  color: #23875b;
+}
+
+.warning {
+  background: #fff3df;
+  color: #bd7a24;
+}
+
+.btn-edit,
+.btn-delete {
+  border: none;
+  padding: 7px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: not-allowed;
+}
+
+.btn-edit {
+  background: #edf3ff;
+  color: #3978d6;
+}
+
+.btn-delete {
+  background: #fff0ef;
+  color: #d45d57;
+}
+
+.footer-table {
+  padding: 16px 22px;
+  color: #8995a5;
+  font-size: 11px;
+}
+
+@media (max-width: 1000px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .table-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .stats {
+    gap: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
