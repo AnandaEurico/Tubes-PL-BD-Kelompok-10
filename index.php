@@ -36,6 +36,7 @@ $totalPemilik = count(array_unique($pemilik));
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< HEAD
 
 <div class="sidebar">
     <div class="brand">
