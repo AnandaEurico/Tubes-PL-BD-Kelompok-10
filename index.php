@@ -44,9 +44,9 @@ $totalPemilik = count(array_unique($pemilik));
 
     <p class="menu-title">MENU UTAMA</p>
 
-    <a href="#" class="menu active">▦ Dashboard</a>
-    <a href="#" class="menu">▤ Data Barang</a>
-    <a href="#" class="menu">♙ Data Pemilik</a>
+    <a href="#" class="menu active"> Dashboard</a>
+    <a href="#" class="menu"> Data Barang</a>
+    <a href="#" class="menu"> Data Pemilik</a>
 
     <div class="admin">
         <div class="avatar">A</div>
